@@ -18,7 +18,7 @@ from langserve import RemoteRunnable
 
 # TEST LINK
 # link = "http://localhost:8000/llm"
-link = "https://phalangeal-kenley-nonethnologically.ngrok-free.dev"
+link = "https://phalangeal-kenley-nonethnologically.ngrok-free.dev/llm"
 
 def tiktoken_len(text):
     tokenizer = tiktoken.get_encoding("cl100k_base")
@@ -187,4 +187,5 @@ def main():
                 add_history("ai", "".join(chunks))
 
 if __name__ == '__main__':
+
     main()
